@@ -4,9 +4,17 @@ import path from "path";
 
 const app = express();
 
+const VIEWS_PATH  = path.join(process.cwd(),
+  "netlify", "functions", "server", "views");
+const PUBLIC_PATH = path.join(process.cwd(),
+  "netlify", "functions", "server", "public");
+
 app.set("view engine", "ejs");
+app.set("views", VIEWS_PATH);
 app.use(bodyParser.urlencoded({ extended: true }));
-app.use(express.static("public"));
+app.use(express.static(PUBLIC_PATH));
+
+
 
 app.get("/", (req, res) => {
   res.render("index");
@@ -14,10 +22,10 @@ app.get("/", (req, res) => {
 
 app.post("/submit", (req, res) => {
   var randomName = adj[Math.floor(Math.random()* adj.length)]+' '+noun[Math.floor(Math.random()* noun.length)];
-  var randomYear = 2000+Math.floor(Math.random()*100);
+  // var randomYear = 2000+Math.floor(Math.random()*100);
   res.render("index",{
     bandName: randomName,
-    year: randomYear
+    // year: randomYear
   });
 });
 
