@@ -1,0 +1,11 @@
+# netlify.toml
+[build]
+  functions = "netlify/functions"
+  # no build command needed unless you transpile – leave blank or echo
+  command   = "echo 'nothing to build'"
+
+[[redirects]]
+  # send *all* traffic to functions
+  from    = "/*"
+  to      = "/.netlify/functions/server"
+  status  = 200
