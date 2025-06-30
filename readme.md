@@ -22,7 +22,6 @@ Check-out my app [here](https://bandnamestudio.netlify.app/).
 ---
 
 ## Project Overview 
-🎯📄💡
 
 The **Band Name Generator** is a small app that mixes random words to create cool and funny band names. 🎵🎲✨
 
@@ -37,7 +36,6 @@ You don’t need to manage your own server—it all runs in the cloud and handle
 ---
 
 ## Features 
-🧰🌟🔧
 
 - 🎲 Generates a band name every time you click a button
 - 💻 Simple and clean user interface
@@ -47,7 +45,6 @@ You don’t need to manage your own server—it all runs in the cloud and handle
 ---
 
 ## Prerequisites 
-📋💻🔍
 
 To use or work on this app, you’ll need:
 
@@ -58,7 +55,7 @@ To use or work on this app, you’ll need:
 ---
 
 ## Installation & Local Development 
-🧑‍💻📂⚙️
+
 
 1. 📥 **Get the code from GitHub**
 
@@ -86,7 +83,6 @@ To use or work on this app, you’ll need:
 ---
 
 ## Project Structure 
-🗂️📁🧱
 
 ```
 my-repo/
@@ -110,10 +106,9 @@ my-repo/
 ---
 
 ## Deployment to Netlify 
-🚀🔧🌐
 
 1. 🔗 **Connect your GitHub repo** to Netlify
-2. ⚙️ **Check your **``** file**:
+2. ⚙️ **Check your **`netlify.toml`** file**:
    ```toml
    [build]
      functions = "netlify/functions"
@@ -130,13 +125,12 @@ my-repo/
 ---
 
 ## Environment Variables 
-⚠️🔒🧬
 
 ⚠️ You don’t need any special settings for this project to work. If you add more advanced features later, you might use them. 🔐📄🛡️
 
 ---
 
-## Usage 🧪📲🎶
+## Usage 
 
 - 🖱️ Click the **Generate Band Name** button
 - 📢 See the name appear below the form
@@ -145,7 +139,6 @@ my-repo/
 ---
 
 ## Contributing 
-🤝🛠️📈
 
 Want to help improve this app? Here’s how:
 
@@ -160,14 +153,12 @@ Want to help improve this app? Here’s how:
 ---
 
 ## License 
-📄⚖️🔓
 
 📄 This project currently doesn't have any License. You can reuse it or change it for your own projects. 📘🔏✅
 
 ---
 
 ## Acknowledgements 
-🙏🎉👏
 
 - 🙏 Thanks to the guidance of tutor Dr.Angela Yu from Udemy
 - 💡 Inspired by all the fun band name generators out there 🎼💭💫
