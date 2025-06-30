@@ -14,18 +14,20 @@ app.set("views", VIEWS_PATH);
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.static(PUBLIC_PATH));
 
-
+const currentYear = new Date().getFullYear();
 
 app.get("/", (req, res) => {
-  res.render("index");
+  res.render("index",{
+    bandName: null,
+    year: currentYear
+  });
 });
 
 app.post("/submit", (req, res) => {
   var randomName = adj[Math.floor(Math.random()* adj.length)]+' '+noun[Math.floor(Math.random()* noun.length)];
-  // var randomYear = 2000+Math.floor(Math.random()*100);
   res.render("index",{
     bandName: randomName,
-    // year: randomYear
+    year: currentYear
   });
 });
 
